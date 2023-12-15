@@ -46,6 +46,15 @@ body::before{
     z-index: -1;
     opacity: 0.12;
 }
+a{
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 600;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+}
 img{
     max-width: 100%;
     vertical-align: middle;
@@ -71,6 +80,17 @@ section{
 .align-items-center{
     align-items: center;
 }
+.btn{
+    line-height: 1.5;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 10px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
 
 .home-section{
     display: flex;
@@ -86,6 +106,7 @@ section{
 .home-text h2{
     font-size: 20px;
     text-transform: capitalize;
+    font-weight: 300;
 }
 .home-text,
 .home-img{
