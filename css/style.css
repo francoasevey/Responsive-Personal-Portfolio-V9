@@ -186,6 +186,20 @@ button{
         opacity: 1;
     }
 }
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 200;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
+}
 .header{
     position: absolute;
     left: 0;
@@ -216,6 +230,11 @@ button{
     justify-content: center;
     margin: 0 15px;
     z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.header .nav-toggler.hide{
+    opacity: 0;
+    transition: none;
 }
 .header .nav-toggler span{
     height: 2px;
